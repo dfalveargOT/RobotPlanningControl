@@ -1,4 +1,4 @@
-# Course Description: Autonomous Robotics – Planning, Control, and Perception
+# Autonomous Robotics – Planning and Control
 
 Autonomous robots are designed to perform assigned tasks with minimal human supervision. This requires the robot’s capabilities to perceive its surroundings, find its own location, identify obstacles to avoid, determine the destination to reach, and compute a trajectory to control its motors, maneuvering toward its destination along the computed path.
 
@@ -13,9 +13,6 @@ The course is organized around key questions central to autonomous robotics:
 3. **How to plan and compute trajectories for robots to perform given tasks?**
 
 ## Learning Outcomes
-
-Students are expected to develop high confidence and skill sets in:
-
 - **Modeling dynamics** of robotic systems.
 - **Designing planning and control algorithms** for autonomous robots.
 
