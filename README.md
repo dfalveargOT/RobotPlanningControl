@@ -1,8 +1,6 @@
 # Autonomous Robotics – Planning and Control
 
-Autonomous robots are designed to perform assigned tasks with minimal human supervision. This requires the robot’s capabilities to perceive its surroundings, find its own location, identify obstacles to avoid, determine the destination to reach, and compute a trajectory to control its motors, maneuvering toward its destination along the computed path.
-
-To achieve this level of autonomy, robotics scientists and engineers must have a deep understanding of the operation of sensors and actuators, as well as the foundations of control and planning necessary to realize autonomous robotic systems. This course introduces the basic tenets of robot planning and control, alongside related concepts in localization, sensing, and perception.
+This course delves into the essential principles of autonomous robotics, focusing on the development of systems capable of performing tasks with minimal human supervision. Key topics include the robot’s ability to perceive its environment, determine its location, identify and avoid obstacles, and compute and follow a trajectory to reach a specified destination. The course covers the operation of sensors and actuators, foundational concepts in control and planning, and critical aspects of localization, sensing, and perception necessary to achieve robotic autonomy.
 
 ## Key Modules
 
@@ -52,5 +50,3 @@ The course is organized around key questions central to autonomous robotics:
 ### 8. Sensing and Perception
 - Fundamentals of maps and environment representation, and the basics of robot sensing and object recognition.
 - Principles of simultaneous localization and mapping (SLAM), and the challenges of real-time motion planning in dynamic environments.
-
-Through a combination of theoretical knowledge and practical application, students will develop high confidence and skill sets in modeling robot dynamics, designing planning and control algorithms, and implementing these concepts in simulated and real-world scenarios. The course is designed to equip students with the tools necessary to realize the autonomy of robotic systems in various applications.
