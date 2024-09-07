@@ -1,24 +1,25 @@
-This is free and unencumbered software released into the public domain.
+Custom License for RobotPlanningControl
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+Copyright (c) 2024, David Alvear. All rights reserved.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+License Terms
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+1. Permission to View
 
-For more information, please refer to <https://unlicense.org>
+You are permitted to view the contents of this repository for personal, educational, or research purposes. Viewing includes browsing the code, reading the documentation, and understanding the concepts presented in this repository.
+
+2. Restrictions
+
+You are NOT permitted to:
+
+	•	Use the code or any other content in this repository for any purpose, including personal, educational, commercial, or non-commercial uses.
+	•	Copy, modify, merge, publish, distribute, sublicense, or sell copies of the code or any other content in this repository.
+	•	Create derivative works based on the content in this repository.
+
+3. No Warranty
+
+The content in this repository is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the author(s) or copyright holder(s) be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the content in this repository or the use or other dealings in the content.
+
+4. Contact Information
+
+For permissions beyond the scope of this license, please contact dfalvearg@gmail.com.
