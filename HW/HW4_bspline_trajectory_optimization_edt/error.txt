@@ -1,0 +1,27 @@
+he above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/RobotPP/HW/HW4/bspline_trajectory_optimization_edt/bspline_optimization_mobile_robot_edt.py", line 39, in <module>
+    p_x, p_y, control_points_x, control_points_y = bspline.compute_trajectory(x_initial)
+  File "/home/ubuntu/Documents/RobotPP/HW/HW4/bspline_trajectory_optimization_edt/BSplineOptimizationJAXEDT.py", line 161, in compute_trajectory
+    x, info = super(BSplineOptimization, self).solve(x0)
+  File "cyipopt/cython/ipopt_wrapper.pyx", line 642, in ipopt_wrapper.Problem.solve
+  File "cyipopt/cython/ipopt_wrapper.pyx", line 676, in ipopt_wrapper.objective_cb
+  File "/home/ubuntu/Documents/RobotPP/HW/HW4/bspline_trajectory_optimization_edt/BSplineOptimizationJAXEDT.py", line 198, in objective
+    minimum_distance_to_obstacles = jnp.array(list(map(self.compute_minimum_distance_to_obstacles, zip(pts_x, pts_y))))
+  File "/home/ubuntu/Documents/RobotPP/HW/HW4/bspline_trajectory_optimization_edt/BSplineOptimizationJAXEDT.py", line 107, in compute_minimum_distance_to_obstacles
+    minimum_distance_to_obstacles = self.edt[position[1],position[0]]
+  File "/home/ubuntu/miniconda3/envs/robotpp/lib/python3.9/site-packages/jax/_src/array.py", line 275, in __getitem__
+    return lax_numpy._rewriting_take(self, idx)
+  File "/home/ubuntu/miniconda3/envs/robotpp/lib/python3.9/site-packages/jax/_src/numpy/lax_numpy.py", line 3943, in _rewriting_take
+    return _gather(arr, treedef, static_idx, dynamic_idx, indices_are_sorted,
+  File "/home/ubuntu/miniconda3/envs/robotpp/lib/python3.9/site-packages/jax/_src/numpy/lax_numpy.py", line 3952, in _gather
+    indexer = _index_to_gather(shape(arr), idx)  # shared with _scatter_update
+  File "/home/ubuntu/miniconda3/envs/robotpp/lib/python3.9/site-packages/jax/_src/numpy/lax_numpy.py", line 4240, in _index_to_gather
+    raise TypeError(msg.format(abstract_i.dtype.name, idx_pos, i))
+TypeError: Indexer must have integer or boolean type, got indexer with type float64 at position 0, indexer value Traced<ShapedArray(float64[])>with<DynamicJaxprTrace(level=2/0)>
+
+minimum_distance_to_obstacles = (1-(pts_x-int_pts_x))*(1-(pts_y-int_pts_y))*self.edt[int_pts_y, int_pts_x] \
+                                            + ((pts_x-int_pts_x))*(1-(pts_y-int_pts_y))*self.edt[int_pts_y+1, int_pts_x] \
+                                            + (1-(pts_x-int_pts_x))*((pts_y-int_pts_y))*self.edt[int_pts_y, int_pts_x+1] \
+                                            + (pts_x-int_pts_x)*(pts_y - int_pts_y)*self.edt[int_pts_y+1, int_pts_x+1]
