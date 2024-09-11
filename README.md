@@ -32,7 +32,7 @@ $$
 \tau = M(\theta)(K_1\theta + K_2\dot{\theta}) + V(\theta, \dot{\theta}) + G(\theta)
 $$
 
-Given a reference trajectory \( \theta_{\text{ref}} \), \( t > 0 \), design a controller for trajectory tracking:
+Given a reference trajectory $\( \theta_{\text{ref}} \), \( t > 0 \)$, design a controller for trajectory tracking:
 
 $$
 \mathbf{x}_{\text{ref}} = 
