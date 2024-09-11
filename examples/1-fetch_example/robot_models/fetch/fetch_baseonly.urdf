@@ -1,0 +1,139 @@
+<robot name="fetch">
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0036 0.0 0.0014" />
+      <mass value="70.1294" />
+      <inertia ixx="1.225" ixy="0.0099" ixz="0.0062" iyy="1.2853" iyz="-0.0034" izz="0.987" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/base_link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.356 0.361 0.376 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.03" />
+      <geometry>
+        <mesh filename="meshes/base_link_collision.STL" />
+      </geometry>
+    </collision>
+
+    <contact>
+      <lateral_friction value="0.0"/>
+      <rolling_friction value="0.0"/>
+       <stiffness value="300000"/>
+      <damping value="30000"/>
+    </contact>
+  </link>
+
+  <link name="caster_wheel_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0036 0.0 0.0014" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/base_link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.356 0.361 0.376 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/base_link_collision.STL" scale="0.99 0.99 1"/>
+      </geometry>
+    </collision>
+    <contact>
+      <lateral_friction value="0.0"/>
+      <rolling_friction value="0.0"/>
+       <stiffness value="300000"/>
+      <damping value="30000"/>
+    </contact>
+  </link>
+
+   <joint name="caster_wheel_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="base_link" />
+    <child link="caster_wheel_link" />
+   </joint>
+
+  <link name="r_wheel_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="4.3542" />
+      <inertia ixx="0.0045" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.0045" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r_wheel_link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.086 0.506 0.767 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/r_wheel_link_collision.STL" />
+      </geometry>
+    </collision>
+     <contact>
+      <lateral_friction value="1.0"/>
+      <rolling_friction value="0.0"/>
+       <stiffness value="300000"/>
+      <damping value="30000"/>
+    </contact>
+  </link>
+  <joint name="r_wheel_joint" type="continuous">
+    <origin rpy="-6.123E-17 0 0" xyz="0.0012914 -0.18738 0.055325" />
+    <parent link="base_link" />
+    <child link="r_wheel_link" />
+    <axis xyz="0 1 0" />
+    <!-- <limit effort="8.85" velocity="17.4" /> -->
+    </joint>
+  
+  <link name="l_wheel_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="4.3542" />
+      <inertia ixx="0.0045" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.0045" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/l_wheel_link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.086 0.506 0.767 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/l_wheel_link_collision.STL" />
+      </geometry>
+    </collision>
+     <contact>
+      <lateral_friction value="1.0"/>
+      <rolling_friction value="0.0"/>
+       <stiffness value="300000"/>
+      <damping value="30000"/>
+    </contact>
+
+  </link>
+  <joint name="l_wheel_joint" type="continuous">
+    <origin rpy="-6.123E-17 0 0" xyz="0.0012914 0.18738 0.055325" />
+    <parent link="base_link" />
+    <child link="l_wheel_link" />
+    <axis xyz="0 1 0" />
+    <!-- <limit effort="8.85" velocity="17.4" /> -->
+    </joint>
+</robot>

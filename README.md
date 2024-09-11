@@ -16,11 +16,15 @@ The course is organized around key questions central to autonomous robotics:
 
 ## Course Project:
 
-![arm](assets/1_arm.jpg)
 
 **LQR Controller**: Design a Linear Quadratic Regulator (LQR) controller to provide optimal control for the manipulator during the pick and place process.
+
 **PRM Trajectory Generator**: Implement a Probabilistic Roadmap (PRM) trajectory generator to efficiently plan collision-free paths for the manipulator to follow while picking and placing cubes.
+
 **Task Allocator**: Develop a task allocation algorithm to intelligently assign the pick and place tasks to the manipulator, considering the cube's color and drop-off locations.
+
+![arm](assets/1_arm.jpg)
+
 
 Design a LQR controller \( u = Kx \), where \( K = (K_1, K_2) \)
 
@@ -82,23 +86,42 @@ Define $\bar{x} = x - x_{\text{ref}}$ and $\bar{u} = u - u_{\text{ref}}$. Then w
 - Physics underlying robotic systems and coordinate transformations.
 - Detailed examination of the kinematics of mobile robots and robotic manipulators.
 
+![arm](assets/car.png)
+![arm](assets/car1.png)
+
 ### 4. Robot Dynamics
 - Introduction to Newton-Euler methods and the Lagrange method for dynamic modeling.
 - Analysis of the dynamics of mobile robots and manipulators, emphasizing the principles of motion and force interactions.
+
+![arm](assets/dron.png)
 
 ### 5. Robot Control
 - Techniques for ensuring stability in robot dynamics and designing state feedback systems.
 - Approaches for path and trajectory following, incorporating obstacle avoidance strategies to ensure safe and efficient robot navigation.
 
+![arm](assets/MPC1.png)
+![arm](assets/MPC2.png)
+
 ### 6. Motion Planning
-- Exploration of graph search algorithms and Rapidly-Exploring Random Trees (RRT) for motion planning.
+- Exploration of graph search algorithms and Rapidly-Exploring Random Trees (RRT) for motion planning, B-Spline trajectories.
 - Techniques for trajectory optimization and the integration of learning-based planning methods.
 - Application of motion planning in robot navigation and manipulation tasks.
+
+![arm](assets/prmcontrol.png)
+![arm](assets/prm.png)
 
 ### 7. Localization
 - Overview of sensors used for robot localization and methods for modeling uncertainty.
 - Introduction to particle filters and Kalman filters, as well as sensor fusion techniques to enhance localization accuracy.
 
+![arm](assets/map.png)
+
 ### 8. Sensing and Perception
 - Fundamentals of maps and environment representation, and the basics of robot sensing and object recognition.
 - Principles of simultaneous localization and mapping (SLAM), and the challenges of real-time motion planning in dynamic environments.
+
+![arm](assets/octree.png)
+![arm](assets/voxel.png)
+![arm](assets/slam.png)
+
+
