@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/RobotPP/term_project/kuka_term_project.py", line 56, in <module>
+    task_alloc = task_allocator(manip_control, trays, tray_width)
+  File "/home/ubuntu/Documents/RobotPP/term_project/manipulator.py", line 217, in __init__
+    self.dis_path_tray_1 = self.create_smooth_path(self.path_tray_1)
+  File "/home/ubuntu/Documents/RobotPP/term_project/manipulator.py", line 372, in create_smooth_path
+    cs_x = CubicSpline(x, x)
+  File "/home/ubuntu/miniconda3/envs/robotpp/lib/python3.9/site-packages/scipy/interpolate/_cubic.py", line 635, in __init__
+    x, dx, y, axis, _ = prepare_input(x, y, axis)
+  File "/home/ubuntu/miniconda3/envs/robotpp/lib/python3.9/site-packages/scipy/interpolate/_cubic.py", line 61, in prepare_input
+    raise ValueError("`x` must be strictly increasing sequence.")
+ValueError: `x` must be strictly increasing sequence.
+

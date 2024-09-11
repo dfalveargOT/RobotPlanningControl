@@ -14,6 +14,58 @@ The course is organized around key questions central to autonomous robotics:
 - **Modeling dynamics** of robotic systems.
 - **Designing planning and control algorithms** for autonomous robots.
 
+## Course Project:
+
+![project](assets/1_arm.png)
+
+**LQR Controller**: Design a Linear Quadratic Regulator (LQR) controller to provide optimal control for the manipulator during the pick and place process.
+**PRM Trajectory Generator**: Implement a Probabilistic Roadmap (PRM) trajectory generator to efficiently plan collision-free paths for the manipulator to follow while picking and placing cubes.
+**Task Allocator**: Develop a task allocation algorithm to intelligently assign the pick and place tasks to the manipulator, considering the cube's color and drop-off locations.
+
+Design a LQR controller \( u = Kx \), where \( K = (K_1, K_2) \)
+
+$$
+\tau = M(\theta)\bar{\tau} + V(\theta, \dot{\theta}) + G(\theta)
+$$
+
+$$
+\tau = M(\theta)(K_1\theta + K_2\dot{\theta}) + V(\theta, \dot{\theta}) + G(\theta)
+$$
+
+Given a reference trajectory \( \theta_{\text{ref}} \), \( t > 0 \), design a controller for trajectory tracking:
+
+$$
+\textbf{x}_{\text{ref}} = 
+\begin{bmatrix}
+\theta_{\text{ref}} \\
+\dot{\theta}_{\text{ref}}
+\end{bmatrix},
+\quad
+\dot{\textbf{x}}_{\text{ref}} = 
+\begin{bmatrix}
+\dot{\theta}_{\text{ref}} \\
+\ddot{\theta}_{\text{ref}}
+\end{bmatrix}
+$$
+
+Define the system's dynamics as a matrix equation:
+
+$$
+\dot{\textbf{x}}_{\text{ref}} = 
+\begin{bmatrix}
+0 & I \\
+0 & 0
+\end{bmatrix}
+\textbf{x}_{\text{ref}} +
+\begin{bmatrix}
+0 \\
+I
+\end{bmatrix}
+u_{\text{ref}}
+$$
+
+Define \( \bar{x} = x - x_{\text{ref}} \) and \( \bar{u} = u - u_{\text{ref}} \). Then we can design a controller using LQR. We can compute the \( K \) matrix using the **control** library in **Python** and apply the control input \( \bar{u} = K\bar{x} = K_1(\theta - \theta_{\text{ref}}) + K_2(\dot{\theta} - \dot{\theta}_{\text{ref}}) \).
+
 
 ## Key Topics:
 
