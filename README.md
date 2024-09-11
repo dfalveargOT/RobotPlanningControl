@@ -65,7 +65,7 @@ I
 u_{\text{ref}}
 ```
 
-Define $\bar{x} = x - x_{\text{ref}} $ and $ \bar{u} = u - u_{\text{ref}} $. Then we can design a controller using LQR. We can compute the $ K $ matrix using the **control** library in **Python** and apply the control input $ \bar{u} = K\bar{x} = K_1(\theta - \theta_{\text{ref}}) + K_2(\dot{\theta} - \dot{\theta}_{\text{ref}})$.
+Define $\bar{x} = x - x_{\text{ref}}$ and $\bar{u} = u - u_{\text{ref}}$. Then we can design a controller using LQR. We can compute the $ K $ matrix using the **control** library in **Python** and apply the control input $\bar{u} = K\bar{x} = K_1(\theta - \theta_{\text{ref}}) + K_2(\dot{\theta} - \dot{\theta}_{\text{ref}})$.
 
 ## Key Topics:
 
