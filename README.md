@@ -16,7 +16,7 @@ The course is organized around key questions central to autonomous robotics:
 
 ## Course Project:
 
-![project](assets/1_arm.png)
+![arm](assets/1_arm.jpg)
 
 **LQR Controller**: Design a Linear Quadratic Regulator (LQR) controller to provide optimal control for the manipulator during the pick and place process.
 **PRM Trajectory Generator**: Implement a Probabilistic Roadmap (PRM) trajectory generator to efficiently plan collision-free paths for the manipulator to follow while picking and placing cubes.
