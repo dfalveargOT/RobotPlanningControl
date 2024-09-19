@@ -22,7 +22,7 @@ The course is organized around key questions central to autonomous robotics:
 
 **Task Allocator**: Develop a task allocation algorithm to intelligently assign the pick and place tasks to the manipulator, considering the cube's color and drop-off locations.
 
-<img src="assets/1_arm.jpg" alt="" width="300"/>
+<img src="assets/1_arm.jpg" alt="" width="500"/>
 
 Design a LQR controller \( u = Kx \), where \( K = (K_1, K_2) \)
 
@@ -85,23 +85,23 @@ Define $\bar{x} = x - x_{\text{ref}}$ and $\bar{u} = u - u_{\text{ref}}$. Then w
 - Detailed examination of the kinematics of mobile robots and robotic manipulators.
 
 <div style="display: flex; flex-direction: row;">
-  <img src="assets/car.png" alt="" width="300"/>
-  <img src="assets/car1.png" alt="" width="300"/>
+  <img src="assets/car.png" alt="" width="500"/>
+  <img src="assets/car1.png" alt="" width="500"/>
 </div>
 
 ### 4. Robot Dynamics
 - Introduction to Newton-Euler methods and the Lagrange method for dynamic modeling.
 - Analysis of the dynamics of mobile robots and manipulators, emphasizing the principles of motion and force interactions.
 
-<img src="assets/dron.png" alt="" width="300"/>
+<img src="assets/dron.png" alt="" width="500"/>
 
 ### 5. Robot Control
 - Techniques for ensuring stability in robot dynamics and designing state feedback systems.
 - Approaches for path and trajectory following, incorporating obstacle avoidance strategies to ensure safe and efficient robot navigation.
 
 <div style="display: flex; flex-direction: row;">
-  <img src="assets/MPC1.png" alt="" width="300"/>
-  <img src="assets/MPC2.png" alt="" width="300"/>
+  <img src="assets/MPC1.png" alt="" width="500"/>
+  <img src="assets/MPC2.png" alt="" width="500"/>
 </div>
 
 ### 6. Motion Planning
@@ -110,22 +110,22 @@ Define $\bar{x} = x - x_{\text{ref}}$ and $\bar{u} = u - u_{\text{ref}}$. Then w
 - Application of motion planning in robot navigation and manipulation tasks.
 
 <div style="display: flex; flex-direction: row;">
-  <img src="assets/prmcontrol.png" alt="" width="300"/>
-  <img src="assets/prm.png" alt="" width="300"/>
+  <img src="assets/prmcontrol.png" alt="" width="500"/>
+  <img src="assets/prm.png" alt="" width="500"/>
 </div>
 
 ### 7. Localization
 - Overview of sensors used for robot localization and methods for modeling uncertainty.
 - Introduction to particle filters and Kalman filters, as well as sensor fusion techniques to enhance localization accuracy.
 
-<img src="assets/map.png" alt="" width="300"/>
+<img src="assets/map.png" alt="" width="500"/>
 
 ### 8. Sensing and Perception
 - Fundamentals of maps and environment representation, and the basics of robot sensing and object recognition.
 - Principles of simultaneous localization and mapping (SLAM), and the challenges of real-time motion planning in dynamic environments.
 
 <div style="display: flex; flex-direction: row;">
-  <img src="assets/octree.png" alt="" width="300"/>
-  <img src="assets/voxel.png" alt="" width="300"/>
-  <img src="assets/slam.png" alt="" width="300"/>
+  <img src="assets/octree.png" alt="" width="500"/>
+  <img src="assets/voxel.png" alt="" width="500"/>
+  <img src="assets/slam.png" alt="" width="500"/>
 </div>
