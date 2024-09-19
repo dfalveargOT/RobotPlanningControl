@@ -1,4 +1,3 @@
-```markdown
 # Autonomous Robotics – Planning and Control
 
 This course delves into the essential principles of autonomous robotics, focusing on the development of systems capable of performing tasks with minimal human supervision. Key topics include the robot’s ability to perceive its environment, determine its location, identify and avoid obstacles, and compute and follow a trajectory to reach a specified destination. The course covers the operation of sensors and actuators, foundational concepts in control and planning, and critical aspects of localization, sensing, and perception necessary to achieve robotic autonomy.
@@ -130,4 +129,3 @@ Define $\bar{x} = x - x_{\text{ref}}$ and $\bar{u} = u - u_{\text{ref}}$. Then w
   <img src="assets/voxel.png" alt="" width="300"/>
   <img src="assets/slam.png" alt="" width="300"/>
 </div>
-```
