@@ -1,3 +1,4 @@
+```markdown
 # Autonomous Robotics – Planning and Control
 
 This course delves into the essential principles of autonomous robotics, focusing on the development of systems capable of performing tasks with minimal human supervision. Key topics include the robot’s ability to perceive its environment, determine its location, identify and avoid obstacles, and compute and follow a trajectory to reach a specified destination. The course covers the operation of sensors and actuators, foundational concepts in control and planning, and critical aspects of localization, sensing, and perception necessary to achieve robotic autonomy.
@@ -16,15 +17,13 @@ The course is organized around key questions central to autonomous robotics:
 
 ## Course Project:
 
-
 **LQR Controller**: Design a Linear Quadratic Regulator (LQR) controller to provide optimal control for the manipulator during the pick and place process.
 
 **PRM Trajectory Generator**: Implement a Probabilistic Roadmap (PRM) trajectory generator to efficiently plan collision-free paths for the manipulator to follow while picking and placing cubes.
 
 **Task Allocator**: Develop a task allocation algorithm to intelligently assign the pick and place tasks to the manipulator, considering the cube's color and drop-off locations.
 
-![arm](assets/1_arm.jpg)
-
+<img src="assets/1_arm.jpg" alt="" width="300"/>
 
 Design a LQR controller \( u = Kx \), where \( K = (K_1, K_2) \)
 
@@ -86,42 +85,49 @@ Define $\bar{x} = x - x_{\text{ref}}$ and $\bar{u} = u - u_{\text{ref}}$. Then w
 - Physics underlying robotic systems and coordinate transformations.
 - Detailed examination of the kinematics of mobile robots and robotic manipulators.
 
-![arm](assets/car.png)
-![arm](assets/car1.png)
+<div style="display: flex; flex-direction: row;">
+  <img src="assets/car.png" alt="" width="300"/>
+  <img src="assets/car1.png" alt="" width="300"/>
+</div>
 
 ### 4. Robot Dynamics
 - Introduction to Newton-Euler methods and the Lagrange method for dynamic modeling.
 - Analysis of the dynamics of mobile robots and manipulators, emphasizing the principles of motion and force interactions.
 
-![arm](assets/dron.png)
+<img src="assets/dron.png" alt="" width="300"/>
 
 ### 5. Robot Control
 - Techniques for ensuring stability in robot dynamics and designing state feedback systems.
 - Approaches for path and trajectory following, incorporating obstacle avoidance strategies to ensure safe and efficient robot navigation.
 
-![arm](assets/MPC1.png)
-![arm](assets/MPC2.png)
+<div style="display: flex; flex-direction: row;">
+  <img src="assets/MPC1.png" alt="" width="300"/>
+  <img src="assets/MPC2.png" alt="" width="300"/>
+</div>
 
 ### 6. Motion Planning
 - Exploration of graph search algorithms and Rapidly-Exploring Random Trees (RRT) for motion planning, B-Spline trajectories.
 - Techniques for trajectory optimization and the integration of learning-based planning methods.
 - Application of motion planning in robot navigation and manipulation tasks.
 
-![arm](assets/prmcontrol.png)
-![arm](assets/prm.png)
+<div style="display: flex; flex-direction: row;">
+  <img src="assets/prmcontrol.png" alt="" width="300"/>
+  <img src="assets/prm.png" alt="" width="300"/>
+</div>
 
 ### 7. Localization
 - Overview of sensors used for robot localization and methods for modeling uncertainty.
 - Introduction to particle filters and Kalman filters, as well as sensor fusion techniques to enhance localization accuracy.
 
-![arm](assets/map.png)
+<img src="assets/map.png" alt="" width="300"/>
 
 ### 8. Sensing and Perception
 - Fundamentals of maps and environment representation, and the basics of robot sensing and object recognition.
 - Principles of simultaneous localization and mapping (SLAM), and the challenges of real-time motion planning in dynamic environments.
 
-![arm](assets/octree.png)
-![arm](assets/voxel.png)
-![arm](assets/slam.png)
-
-
+<div style="display: flex; flex-direction: row;">
+  <img src="assets/octree.png" alt="" width="300"/>
+  <img src="assets/voxel.png" alt="" width="300"/>
+  <img src="assets/slam.png" alt="" width="300"/>
+</div>
+```
